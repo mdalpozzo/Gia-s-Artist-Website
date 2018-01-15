@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*===============================================*/
+
+html {
+	height: 200%;
+}
+
+body {
+	height: 50%;
+}
+
+body {
+	background: url(../images/spain.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: arial, sans-serif;
+	display: flex;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body img {
+	height: 3rem;
+	width: 3rem;
+}
+
+/* ================================================  TOOLBAR */
+
+.header {
+	z-index: 99;
+	position: fixed;
+	width: 100%;
+	height: 4rem;
+	background-color: #000000aa;
+	color: #ffffffaa;
+	font-family: 'Encode Sans Expanded', sans-serif;
+	text-align: center;
+}
+
+.header input{
+	display: inline-block;
+	float: right;
+	margin-top: 1.5rem;
+	margin-left: 3rem;
+	margin-right: 2rem;
+	width: 15%;
+}
+
+.header:hover {
+	color: #ffffffdd;
+}
+
+.header ul {
+	float: right;
+	display: inline-block;
+	margin-top: 1.5rem;
+}
+
+.header li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 3rem;
+}
+
+.header li:last-child {
+	margin-right: 0;
+}
+
+.header li:hover {
+	color: #ddffee;
+	cursor: pointer;
+	text-shadow: 0rem 0rem 3rem #ddffee;
+}
+
+.header p {
+	font-family: 'Pacifico', cursive;
+	font-size: 2.5rem;
+	display: inline-block;
+	float: left;
+	margin-top: .3rem;
+	margin-left: .3rem;
+}
+
+.header .toolbar {
+	width: 100%;
+	display: inline-block;
+}
+
+.header nav {
+	margin-right: 3rem;
+}
+
+
+/* ================================================  MAIN/HOME PAGE */
+
+.main .comment {
+	display: none;
+}
+
+
+
+/* ================================================  FOOTER
+ gia logo, social links, search bar, navigation links, copyright, date */
+
+footer {
+	display: none;
+}
+
+
+/* ================================================  GALLERIES
+/* Defaults (florals get defaults) */
+#galleries {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* ------- gallery title banner ------- */
+.banner {
+	height: 75%;
+	width: 100%;
+	display: flex;
+}
+
+.banner .splash {
+	z-index: 80;
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.florals .banner .splash-inner {
+	background: url(../images/florals/floral2.jpg) center center no-repeat;
+	background-size: 130%;
+	height: 100%;
+	width: 100%;
+}
+
+.banner .description {
+	z-index: 90;
+	width: 50%;
+	float: right;
+	padding: 2rem;
+	margin: 0;
+	box-shadow: -6rem 0 30rem 5rem #db8669;
+	background-color: #dc8668;
+	text-align: center;
+}
+
+.banner .description-block {
+	width: 50%;
+	height: 50%;
+	position: relative;
+	margin: auto;
+	margin-top: 14rem;
+	margin-left: 5rem;
+	padding: 2rem;
+	color: #2b6721;
+	text-align: left;
+}
+
+.banner .description h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	text-shadow:
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+	text-shadow: 
+      -1px -1px 1px #111, 
+      2px 2px 1px #363636;
+	text-shadow: 1rem 1rem 2rem #00000088;
+}
+
+.banner .description p {
+}
+/* ------- GALLERY PICTURE VIEWER -------- */
+.gallery {
+	background-color: #ffffff;
+	z-index: 98;
+	position: relative;
+	height: 75rem;
+}
+
+.gallery .paintings {
+	z-index: 98;
+	text-align: center;
+	border: 1px solid black;
+	width: 75%;
+	height: 60rem;
+	float: right;
+	margin: 5rem 5rem;
+}
+
+.gallery ul {
+	width: 100%;
+}
+
+.gallery li {
+	width: 15rem;
+	height: 15rem;
+	margin: 2rem;
+	float: left;
+	border: 1px solid black;
+
+}
+
+.gallery img {
+	width: 15rem;
+	height: 15rem;
+	margin: auto;
+	display: block;
+}
+
+/* ================================================  FLORAL GALLERY */
+#galleries .florals {
+	display: none;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+}
+/* ================================================  LANDSCAPE GALLERY */
+#galleries .landscapes {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.landscapes .banner .splash-inner {
+	background: url(../images/landscapes/sblandscape2.jpg) center center no-repeat;
+	background-size: 185%;
+	height: 100%;
+	width: 100%;
+}
+
+.landscapes .banner .description {
+	background-color: #7e4d3c;
+	box-shadow: -6rem 0 30rem 7rem #7e4d3c;
+}
+.landscapes .banner .description-block {
+	color: #c0a799;
+}
+
+/* ================================================  PORTRAIT GALLERY */
+#galleries .portraits {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.portraits .banner .splash-inner {
+	background: url(../images/portraits/portraitsketch.jpg) center center no-repeat;
+	background-size: 165%;
+	height: 100%;
+	width: 100%;
+}
+
+.portraits .banner .description {
+	background-color: #000000;
+	box-shadow: -6rem 0 30rem 7rem #000000;
+}
+
+.portraits .banner .description h1 {
+	text-shadow: 1rem 1rem 2rem #a6a59988;
+}
+
+.portraits .banner .description-block {
+	color: #a6a599;
+}
+
+/* ================================================  STILL LIFE GALLERY */
+#galleries .stills {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.stills .banner .splash-inner {
+	background: url(../images/still-life/funkystill.jpg) center center no-repeat;
+	background-size: 150%;
+	height: 100%;
+	width: 100%;
+}
+
+.stills .banner .description {
+	background-color: #629e8d;
+	box-shadow: -6rem 0 30rem 7rem #629e8d;
+}
+
+.stills .banner .description-block {
+	color: #423271;
+}
+
+
+
+
+#thumbnails {
+	display: none;
+}
+
+
+/* ================================================  BIOGRAPHY PAGE */
+#bio {
+	display:none;
+	width: 60rem;
+	position: absolute;
+	top: 15rem;
+	left:20rem;
+}
+
+#bio img {
+	width: 10rem;
+	height: 10rem;
+	display: inline-block;
+	float: left;
+}
+
+#bio .inner {
+	display: inline-block;
+	background-color: #ffffff;
+	float: right;
+	width: 50%;
+}
